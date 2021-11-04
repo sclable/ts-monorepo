@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.7.0](https://github.com/sclable/ts-monorepo/compare/@sclable/lint@1.6.13...@sclable/lint@1.7.0) (2021-11-04)
+
+
+### Features
+
+* update to eslint@8 ([0c6147d](https://github.com/sclable/ts-monorepo/commit/0c6147deaf6386f6c47f2099bc82621b93489757))
+
+
+
+
+
 ## [1.6.13](https://github.com/sclable/ts-monorepo/compare/@sclable/lint@1.6.12...@sclable/lint@1.6.13) (2021-11-04)
 
 **Note:** Version bump only for package @sclable/lint

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/sclable/ts-monorepo/compare/@sclable/eslint-config@0.5.13...@sclable/eslint-config@0.6.0) (2021-11-04)
+
+
+### Features
+
+* update to eslint@8 ([0c6147d](https://github.com/sclable/ts-monorepo/commit/0c6147deaf6386f6c47f2099bc82621b93489757))
+
+
+
+
+
 ## [0.5.13](https://github.com/sclable/ts-monorepo/compare/@sclable/eslint-config@0.5.12...@sclable/eslint-config@0.5.13) (2021-11-04)
 
 **Note:** Version bump only for package @sclable/eslint-config
