@@ -16,7 +16,6 @@ module.exports = {
     '@vue/prettier',
     '@vue/prettier/@typescript-eslint',
     'prettier',
-    'prettier/vue',
   ],
   plugins: ['no-only-tests', 'eslint-plugin-import', '@typescript-eslint', 'prettier'],
   rules: {
