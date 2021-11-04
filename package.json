@@ -1,0 +1,38 @@
+{
+  "name": "@sclable/ts-monorepo",
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "husky install"
+  },
+  "author": {
+    "name": "Sclable Business Solutions GmbH",
+    "email": "office@sclable.com",
+    "url": "https://sclable.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:sclable/ts-monorepo.git"
+  },
+  "engines": {
+    "node": "^12.18.0 || ^14.5.0 || ^16.12.0",
+    "npm": "^8.1.0"
+  },
+  "dependencies": {
+    "@sclable/eslint-config": "file:packages/eslint-config",
+    "@sclable/lint": "file:packages/lint",
+    "@sclable/prettier-config": "file:packages/prettier-config",
+    "@sclable/tsconfig": "file:packages/tsconfig"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "14.1.0",
+    "@commitlint/config-conventional": "14.1.0",
+    "@commitlint/prompt-cli": "14.1.0",
+    "husky": "7.0.4",
+    "lerna": "4.0.0"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  }
+}

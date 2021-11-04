@@ -1,0 +1,47 @@
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.x, 14.x, 16.x]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup NodeJS ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+      - name: Install
+        run: npm ci
+
+  publish:
+    runs-on: ubuntu-latest
+    if: ${{ github.ref == 'refs/heads/master' }} # publish only from master
+    needs: [build]
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+        token: ${{ secrets.GIT_PUSH_TOKEN }}
+    - name: Configure CI user
+      run: |
+        git config user.email "ci@sclable.com"
+        git config user.name "Sclable CI"
+    - name: Setup NodeJS
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16'
+        cache: 'npm'
+
+    - name: Install
+      run: npm ci
+    - name: Publish
+      env:
+        NPM_TOKEN: ${{ secrets.NPMJS_REGISTRY_TOKEN }}
+      run: |
+        echo //registry.npmjs.org/:_authToken=${NPM_TOKEN} > .npmrc
+        npx lerna publish -y
