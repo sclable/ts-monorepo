@@ -24,9 +24,9 @@
     "@sclable/tsconfig": "file:packages/tsconfig"
   },
   "devDependencies": {
-    "@commitlint/cli": "15.0.0",
-    "@commitlint/config-conventional": "15.0.0",
-    "@commitlint/prompt-cli": "15.0.0",
+    "@commitlint/cli": "16.0.1",
+    "@commitlint/config-conventional": "16.0.0",
+    "@commitlint/prompt-cli": "16.0.0",
     "husky": "7.0.4",
     "lerna": "4.0.0"
   },
