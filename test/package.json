@@ -1,0 +1,17 @@
+{
+  "name": "@sclable/lint-test",
+  "version": "0.0.1",
+  "scripts": {
+    "test": "eslint . --ext .js,.ts,.tsx"
+  },
+  "author": {
+    "name": "Sclable Business Solutions GmbH",
+    "email": "office@sclable.com",
+    "url": "https://sclable.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@sclable/eslint-config": "file:../packages/eslint-config",
+    "@sclable/lint": "file:../packages/lint"
+  }
+}

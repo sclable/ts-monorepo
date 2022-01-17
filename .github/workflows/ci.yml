@@ -1,3 +1,4 @@
+name: CI
 on: push
 
 jobs:
@@ -16,6 +17,10 @@ jobs:
           cache: 'npm'
       - name: Install
         run: npm ci
+      - name: Test config
+        run: |
+          npm --prefix test ci
+          npm --prefix test test
 
   publish:
     runs-on: ubuntu-latest
