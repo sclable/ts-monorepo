@@ -15,10 +15,9 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
-      - name: Install
-        run: npm ci
-      - name: Test config
+      - name: Install and test config
         run: |
+          npm ci
           npm --prefix test ci
           npm --prefix test test
 
