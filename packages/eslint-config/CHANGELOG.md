@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.3](https://github.com/sclable/ts-monorepo/compare/@sclable/eslint-config@0.6.2...@sclable/eslint-config@0.6.3) (2022-01-17)
+
+
+### Bug Fixes
+
+* **eslint-config:** fix extending from @vue/eslint-config-prettier ([0af30fc](https://github.com/sclable/ts-monorepo/commit/0af30fc8b374ea53eed0ee923ada920a00d5f2c9))
+
+
+
+
+
 ## [0.6.2](https://github.com/sclable/ts-monorepo/compare/@sclable/eslint-config@0.6.1...@sclable/eslint-config@0.6.2) (2022-01-03)
 
 **Note:** Version bump only for package @sclable/eslint-config
