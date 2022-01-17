@@ -15,11 +15,13 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
-      - name: Install and test config
+      - name: Install
+        run: npm ci
+      - name: Test config
+        working-directory: ./test
         run: |
           npm ci
-          npm --prefix test ci
-          npm --prefix test test
+          npm test
 
   publish:
     runs-on: ubuntu-latest
