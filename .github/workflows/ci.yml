@@ -15,6 +15,9 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
+      - name: Upgrade NPM
+        if: ${{ matrix.node-version == '12.x' || matrix.node-version == '14.x' }}
+        run: npm i -g npm@8 --registry=https://registry.npmjs.org
       - name: Install
         run: npm ci
       - name: Test config
@@ -42,7 +45,6 @@ jobs:
       with:
         node-version: '16'
         cache: 'npm'
-
     - name: Install
       run: npm ci
     - name: Publish
