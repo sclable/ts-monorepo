@@ -24,11 +24,11 @@
     "@sclable/tsconfig": "file:packages/tsconfig"
   },
   "devDependencies": {
-    "@commitlint/cli": "17.0.2",
-    "@commitlint/config-conventional": "17.0.2",
-    "@commitlint/prompt-cli": "17.0.0",
+    "@commitlint/cli": "17.0.3",
+    "@commitlint/config-conventional": "17.0.3",
+    "@commitlint/prompt-cli": "17.0.3",
     "husky": "8.0.1",
-    "lerna": "5.1.4"
+    "lerna": "5.1.6"
   },
   "commitlint": {
     "extends": [
